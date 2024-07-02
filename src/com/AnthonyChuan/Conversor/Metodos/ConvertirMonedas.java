@@ -10,8 +10,8 @@ import java.net.http.HttpResponse;
 
 public class ConvertirMonedas {
 
-    public ConversorDAO determinarMoneda(String moneda){
-        URI url = URI.create("https://v6.exchangerate-api.com/v6/06f1afbf37f717e816e63533/latest/" + moneda);
+    public ConversorDAO valorConversion(String moneda1,String moneda2){
+        URI url = URI.create("https://v6.exchangerate-api.com/v6/06f1afbf37f717e816e63533/pair/" + moneda1+"/"+moneda2);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(url)
@@ -26,6 +26,4 @@ public class ConvertirMonedas {
             throw new RuntimeException("Moneda no hallada");
         }
     }
-
-
 }

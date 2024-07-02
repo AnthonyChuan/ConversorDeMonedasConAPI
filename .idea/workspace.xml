@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3124ad31-b1bc-488f-a25c-93b00c7cb013" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/Metodos/Decisiones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/Modelos/Conversor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/DAO/ConversorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/DAO/ConversorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/Metodos/ConvertirMonedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/Metodos/ConvertirMonedas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AnthonyChuan/Conversor/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

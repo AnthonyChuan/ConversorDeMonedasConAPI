@@ -15,18 +15,24 @@ public class main {
         Decisiones decisiones=new Decisiones();
         String mon1;
         String  mon2;
-        decisiones.ingreseValorACambiar();
-        valorcambiar=teclado.nextInt();
-        decisiones.imprimirMenu();
-        System.out.println("Ingrese moneda por cambiar: ");
-        mon1= teclado.next();
-        System.out.println("Ingrese moneda de cambio: ");
-        mon2= teclado.next();
-        String moneda1= decisiones.moneda1(mon1);
-        String moneda2=decisiones.moneda2(mon2);
-        ConversorDAO conversorDAO= convertirMonedas.valorConversion(moneda1,moneda2);
-        Conversor conversor1=new Conversor(conversorDAO);
-        System.out.println(conversor1);
-        System.out.println(conversor1.calculo(valorcambiar));
+
+        try{
+            decisiones.ingreseValorACambiar();
+            valorcambiar=teclado.nextInt();
+            decisiones.imprimirMenu();
+            System.out.println("Ingrese moneda por cambiar: ");
+            mon1= teclado.next();
+            System.out.println("Ingrese moneda de cambio: ");
+            mon2= teclado.next();
+            String moneda1= decisiones.moneda1(mon1);
+            String moneda2=decisiones.moneda2(mon2);
+            ConversorDAO conversorDAO= convertirMonedas.valorConversion(moneda1,moneda2);
+            Conversor conversor1=new Conversor(conversorDAO);
+            System.out.println("Su cambio es de: "+conversor1.calculo(valorcambiar)+" "+conversorDAO.target_code());
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            System.out.println("Hasta luego");
+        }
+
     }
 }

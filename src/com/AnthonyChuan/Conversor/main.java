@@ -28,6 +28,5 @@ public class main {
         Conversor conversor1=new Conversor(conversorDAO);
         System.out.println(conversor1);
         System.out.println(conversor1.calculo(valorcambiar));
-
     }
 }
